@@ -240,7 +240,7 @@ function CustomNode(props: NodeProps<MyNode["data"]>) {
           <Button size="sm" className="text-xs" variant="outline" asChild>
             <a
               target="_blank"
-              href={`https://console.superfluid.finance/${data.chain!}/accounts/${data.address}`}
+              href={`https://explorer.superfluid.finance/${data.chain!}/${data.isPool ? "pools" : "accounts"}/${data.address}`}
             >
               View in Console
             </a>
